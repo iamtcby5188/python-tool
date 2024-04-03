@@ -1,0 +1,254 @@
+eSuccess = 0,
+eNocaptureExceptionBegin = 90,
+eProjectStart,                         // 项目开始
+eProjectEnd,                           // 项目结束
+eFlowStart,                            // 流程开始
+eFlowEnd,                              // 流程结束
+eCardStart,                            // 卡片开始
+eCardEnd,                              // 卡片结束
+eActionStart,                          // action开始
+eActionEnd,                            // action结束
+eUserStop,                             // 用户主动终止任务
+eWorkFlowStart,                        //工作流开始
+eWorkFlowEnd,                          //工作流结束
+ePythonCodeStart,                      //代码模式开始
+ePythonCodeEnd,                        //代码模式结束
+eSandBoxStart,                         //开始执行本次沙盒调试
+eSandBoxEnd,                           //结束执行本次沙盒调试
+eWarningExceptionBegin = 10000000,
+eUnDefineAction,                       // 未定义action
+eUndefineFlowStep,                     // 未定义的流程控制标签
+eCannotModifyError,                    // 此变量不能被修改
+eNocaptureExceptionEnd = 100000000,
+eParseExceptionBegin = 110000000,      // 解析错误
+eUnknowProjectFile,                    // 未知的工程文件
+eCannotParseProjectFile,               // 工程文件解析异常
+eExpressionParseError,                 // 表达式解析错误
+eStringParseError,                     // 文本串解析错误
+eJsonParseError,                       // json解析错误
+eSubflowParseError,                    // 子流程定义有误
+eVersionRuleError,                     // 版本规则错误
+eLowProjVersionLimitError,             // 工作流版本过低限制
+eParseExceptionEnd = 120000000,
+eOutOfMemoryErrorBegin = 120000000,    // 内存错误
+eMemoryInitError,                      // 内存分配错误
+eDestoryReferenceError,                // 调度清理内存错误
+eOutOfMemoryErrorEnd = 130000000,
+eInvalidExceptionBegin = 130000000,    // 非法无效等错误
+eNonStaticFunctionError,               // 非静态函数错误
+eInvalidDateTime,                      // 无效的时间
+eInvalidDivisor,                       // 除数不合法
+eInvalidType,                          // 变量类型不合法
+eNoneBooleanError,                     // 不是布尔型
+eNoneNumberError,                      // 不是数值型
+eNoneStringError,                      // 不是文本型
+eNoneListError,                        // 不是列表
+eNoneKeyValueError,                    // 不是键值对型
+eNoneDateTimeError,                    // 不是时间型
+eNoneNullError,                        // 不是空型
+eNoneNumberDateTimeStringError,        // 不是文本 数值 时间
+eNoneNormalError,                      // 不是常规类型（数值型，文本型，布尔型，空，时间型）
+eIllegalVariableError,                 // 变量名不合法
+eIllegalRunModeError,                  // 不合法的运行状态
+eInvalidPackageError,                  // 无效的报文
+eInvalidReferenceError,                // 无效的对象索引
+eNoneWriteRight,                       // 没有写权限
+eStepZeroError,                        // 步长为0 错误
+eIllegalProjectFile,                   // 非法的工程文件
+eRGBAHexError,                         // RDGA Hex值不对
+ePStepLeftBiggerError,                 // 正步长时，左边界大于右边界 非法错误
+eNStepLeftBiggerError,                 // 负步长时，右边界大于左边界 非法错误
+eZeroStepError,                        // 步长为0， 非法错误
+eDataNotMatch,                         // 值不匹配
+eInvalidDecimal,                       // 转换数字不合法
+eInvalidExceptionEnd = 140000000,
+eCastExceptionBegin = 140000000,       // 数据转换错误
+eTypeMisMatch,                         // 类型不一致
+eTransposeError,                       // 转置失败
+eChangeToOriginJsonError,              // 无法转为原生json
+eStringChangeToNumberError,            // 文本不能转换为数值
+eStringChangeToDateTimeError,          // 文本不能转换为时间
+eCastExceptionEnd = 150000000,
+eOtherExceptionBegin = 150000000,      // 其他错误
+eParamtersError,                       // 参数有误
+eParamtersCountsError,                 // 参数数目不对
+eActionRunError,                       // action 执行失败
+eRunActionNoneConnectError,            // action 通信失败
+eSortByColumnError,                    // 按列排序失败
+eMisMatchCurTaskError,                 // 与当前运行任务不匹配
+eNotNormalError,                       // 参数不应该是对象类型
+eCenterFileHttpUploadConnectErr,       // 云控上传文件链接失败
+eCenterFileHttpUploadErr,              // 云控上传文件失败
+eCenterFileHttpDownloadConnectErr,     // 云控下载文件链接失败
+eCenterFileHttpDownloadErr,            // 云控下载文件失败
+eCreateProcessFailed,                  // 打开应用失败
+eUnKnowError,                          // 未知错误
+eGetLastErrorBegin = 300000000,        // 此区间，
+eErrorNotFound = 300001168,				//ERROR_NOT_FOUND
+eErrorNoSuchLogonSession = 300001312 ,  //ERROR_NO_SUCH_LOGON_SESSION
+eErrorInvalidFlags = 300001004,			//ERROR_INVALID_FLAGS
+eErrorInvalidParameter = 300000087,		//ERROR_INVALID_PARAMETER
+eErrorBadUserName = 300002202,			//ERROR_BAD_USERNAME
+eScardENoSmartcard = 609999998,			//SCARD_E_NO_SMARTCARD
+eScardENoReadersAvailable = 609999999,	//SCARD_E_NO_READERS_AVAILABLE
+eGetLastErrorEnd = 310000000,          // 预留给GetLastError
+eOtherExceptionEnd = 310000000,
+eOpenExceptionBegin = 310000000,       // 打开操作
+eOpenExceptionEnd = 320000000,
+eExistsExceptionBegin = 320000000,     // 已存在重复等错误
+eVariableRepeate,                      // 变量重复定义 
+eExistUnRunStepsRiskErr,               // 存在未执行步骤风险错误
+eExistTaskPerform,                     // 存在任务在执行
+eExistsExceptionEnd = 330000000,
+eNotExistsExceptionBegin = 330000000,  // 不存在等错误
+eNoneFlowFileError,                    // 不存在流程文件
+eNoneTaskError,                        // 不存在此任务
+eNonClassNameError,                    // 不存在对象类型
+eNonVariableError,                     // 不存在变量
+eEmptyExpression,                      // 空表达式
+eNoLoopBodyError,                      // foreach没有循环体
+eInvokeEmptySubflowError,              // 未设置调用的子流程
+eNoExistSubflowError,                  // 子流程不存在
+eEmptyVariableError,                   // 空变量
+eNoneIntegersError,                    // 不存在整数集合
+eShortIntegersError,                   // 没有足够的整数集合
+eNoneBeginRunIDError,                  // 不存在开始运行ID
+eNoneFunctionError,                    // 不存在的函数
+eNoneKey,                              // 不存在键值
+eInvokeEmptyProjectError,              // 未设置调用的工程
+eInvokeProjectPathNoneExist,           // 调用的工程路径不存在
+eNoneUserOrPswd,                       // 未输入用户名或者密码
+eUserNameEmptyError,                   // 用户名为空错误
+ePasswordEmptyError,                   // 密码为空错误
+eProjectNoneExist,                     // 工程不存在
+eWorkFlowNoneExist,                    // workflow none
+eOutputParamNoneExist,                 //输出参数不存在
+eInputParamNoneExist,                 //输入参数不存在
+eInvokeProjectPackageError,          //引入工程包错误
+eInvokeNetProjectDownloadFailed,     //云端工程下载失败
+eInvokeRobotNotSupportDebug,         //云端机器人执行不支持调试模式
+eInvokeRobotDownloadFailed,          //下载云端机器人失败
+eIndicateElementFailed = 339900000,    // 拾取元素失败
+eIndicateWindowFailed,                 // 拾取窗口失败
+eHighlightFailed,                      // 高亮失败
+eHighlightEmpty,                       // 高亮范围为空
+eHighlightOut,                         // 高亮范围超出屏幕
+eCheckUniqueFailed,                    // 验证失败
+eCheckUniqueMany,                      // 存在多个元素
+eCompletionXPathFailed,                // 补全Xpath失败
+eIndicateSecondFailed,                 // 拾取次元素失败
+eIndicateSecondNoneFirst,              // 未提供首元素
+eIndicateSecondDiff,                   // 无法确定一列
+eAppendColumnFailed,                   // 追加列失败
+eAppendColumnDiff,                     // 不在同一列表
+eMeasurePositionFailed,                // 屏幕测量失败
+eMeasurePositionStop,                  // 放弃屏幕测量
+eIndicateImageFailed,                  // 拾取图像失败
+eIndicateImageStop,                    // 放弃拾取图像
+eKillProcessFailed,                    // 终止进程失败
+eOpenApplicationFailed,                // 打开应用程序失败
+eOpenApplicationNone,                  // 无新开窗口
+eOpenApplicationMany,                  // 有多余窗口
+eCloseApplicationFailed,               // 关闭应用程序失败
+eBrowserTimeout,                       // 浏览器通信超时
+eOpenBrowserFailed,                    // 打开浏览器失败
+eOpenBrowserInvalidType,               // 无效浏览器类型
+eOpenBrowserTimeout,                   // 打开浏览器超时
+eOpenBrowserEmpty,                     // 无效浏览器路径
+eAttachBrowserFailed,                  // 附加浏览器失败
+eCloseTabFailed,                       // 关闭页签失败
+eAttachWindowFailed,                   // 附加窗口失败
+eCloseWindowFailed,                    // 关闭窗口失败
+eShowWindowFailed,                     // 展示窗口失败
+eShowWindowInvalidType,                // 无效窗口展示类型
+eGoBackFailed,                         // 标签页回退失败
+eGoForwardFailed,                      // 标签页前进失败
+eGoHomeFailed,                         // 标签页回主页失败
+eNavigateFailed,                       // 标签页导航失败
+eRefreshFailed,                        // 标签页刷新失败
+eGetTextFailed,                        // 获取文本失败
+eSetTextFailed,                        // 设置文本失败
+eSelectItemFailed,                     // 选择下拉框失败
+eMouseClickFailed,                     // 鼠标操作失败
+eHoverFailed,                          // 鼠标悬停失败
+eTypeIntoFailed,                       // 键盘操作失败
+eSendHotkeyFailed,                     // 发送热键失败
+eExtractDataFailed,                    // 获取结构文本失败
+eCheckFailed,                          // 选中操作失败
+eSetFocusFailed,                       // 设置焦点失败
+eActivateFailed,                       // 激活窗口失败
+eSelectMultipleItemsFailed,            // 选择多项失败
+eElementNotFound,                      // 未查找到元素
+eElementExistsFailed,                  // 获取元素存在失败
+eTakeScreenshotEmpty,                  // 获取截图区域为空
+eTakeScreenshotFailed,                 // 获取截图失败
+eVerifyTabFailed,                      // 验证标签页失败
+eGetAttributeFailed,                   // 获取属性值失败
+eClipByImageFailed,                    // 按图像裁剪失败
+eWaitImageVanishFailed,                // 等待图像消失失败
+eJumpToWorkFlowFailed,               // 进入工作流失败
+eNotExistsExceptionEnd = 340000000,
+eOutOfRangeExceptionBegin = 340000000, // 越界错误
+eNonPositiveInteger,                   // 必须是正整数
+eNonNegativeInteger,                   // 必须是非负整数
+eMillisecondOver,                      // 毫秒越界
+eSecondOver,                           // 秒越界
+eMinuteOver,                           // 分钟越界
+eHourOver,                             // 小时越界
+eDayOver,                              // 日期越界
+eMonthOver,                            // 月份越界
+eYearOver,                             // 年份越界
+eLeftBoderGreaterThanRightBoder,       // 左边界比右边界大
+eParamerOutofRangeError,               // 参数越界
+eShutdownCountDownOutOfRange,          // 关机延迟设置越界
+eInnerPluginVersionLowLimit,           // The official plug-in version is too early.
+eOutOfRangeExceptionEnd = 350000000,
+eOutOfTimeExceptionBegin = 350000000,  // 超时错误
+eCallComponentError,                   // 组件呼叫失败
+eCenterFileHttpUploadConnectTimeOut,   // 云控上传文件超时
+eCenterFileHttpDownloadConnectTimeOut, // 云控下载文件超时
+eOutOfTimeExceptionEnd = 360000000,
+eNullPointerException = 360000000,     // 空指 对象不存在 错误
+eUIAutomationExceptionBegin = 390000000,    // 界面自动化错误
+eNotSupportedAction,                        // 不支持此操作
+eNoneFunctionInBusiness,                    // 业务层无此功能
+eNoneFunctionInService,                     // 服务层无此功能
+eWrongNumberOfParameters,                   // 参数个数不匹配
+eFindWindowTimeout,                         // 查找窗口超时
+eFindWebPageTimeout,                        // 查找标签页超时
+eFindElementTimeout,                        // 查找元素超时
+eFindTooManyWindow,                         // 查找到过多窗口
+eScrollIntoView,                            // 滚动至视口中
+eWindowObjectInvalid,                       // 窗口对象已失效
+eWebPageObjectInvalid,                      // 标签页对象已失效
+eElementObjectInvalid,                      // 元素对象已失效
+eBrowserTypeInvalid,                        // 无效浏览器类型
+eBrowserPathNotFound,                       // 未查找到浏览器路径
+eExtensionNotConnected,                     // 扩展程序未连接
+eFindTooManyWebPage,                        // 查找到过多标签页
+ePageLoadTimeout,                          // 页面加载超时
+eInputModeInvalid,                          // 无效输入模式
+eRegionInvalid,                             // 无效区域
+eFileNameInvalid,                           // 无效文件名
+eOutOfScreen,                               // 超出屏幕区域
+eFindImageTimeout,                          // 查找图像超时
+eCubeHardWare1LoadErr,                      // CubeHardWare1 加载失败
+eCHW1InputStringLoadErr,                    // CHW1InputString 加载失败
+eCubeHardWare1Exception,                    // CubeHardWare1 使用中异常
+eCubeHardWareNoneType,                      // CubeHardWare 不存在硬件设备类型
+eElementFocus,                                // 元素定位
+eIeBrowserWndInvalid,                       // IE浏览器无效
+eWebPageInjectJavaScriptFaild,              // JS注入失败
+ePerformTimeout,                            // 执行超时
+eUIAutomationExceptionEnd = 400000000,
+ePythonCodeErrBegin = 410000000,
+ePythonCodeStartFailed,              //开始执行python代码失败
+ePyCodeException,                    //执行python代码失败 
+ePyCodeUserStop,
+ePythonCodeErrEnd = 419999999,
+eSystemErrorEnd = 899999999,
+eSpecialCodeBegin = 900000000,
+eSpecialCode_LogInfo = 900000001,
+eSpecialCode_LogWarn = 900000002,
+eSpecialCode_LogError = 900000003,
+eSpecialCodeEnd = 999999999,

@@ -1,3 +1,5 @@
 # Default ignored files
 ./venv
 
+*/__pycache__/*.pyc
+*.pyc

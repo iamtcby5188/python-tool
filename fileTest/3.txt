@@ -1,0 +1,249 @@
+Solution
+	E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\CubeAgent\CubeAgent.vcxproj
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\errordict.h
+			(299):    #define GLOBALCODEDICT(x) getMsgDict()[x]
+			toErrMessage (330):    strErr = GLOBALCODEDICT(eCode);
+			toErrMessage (337):    strErr = GLOBALCODEDICT(Cube::eParseExceptionBegin);
+			toErrMessage (342):    strErr = GLOBALCODEDICT(Cube::eOutOfMemoryErrorBegin);
+			toErrMessage (347):    strErr = GLOBALCODEDICT(Cube::eInvalidExceptionBegin);
+			toErrMessage (352):    strErr = GLOBALCODEDICT(Cube::eCastExceptionBegin);
+			toErrMessage (357):    strErr = GLOBALCODEDICT(Cube::eOtherExceptionBegin);
+			toErrMessage (362):    strErr = GLOBALCODEDICT(Cube::eOpenExceptionBegin);
+			toErrMessage (367):    strErr = GLOBALCODEDICT(Cube::eExistsExceptionBegin);
+			toErrMessage (372):    strErr = GLOBALCODEDICT(Cube::eNotExistsExceptionBegin);
+			toErrMessage (377):    strErr = GLOBALCODEDICT(Cube::eOutOfRangeExceptionBegin);
+			toErrMessage (382):    strErr = GLOBALCODEDICT(Cube::eOutOfTimeExceptionBegin);
+			toErrMessage (387):    strErr = GLOBALCODEDICT(Cube::eNullPointerException).arg("");
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\qcontroller\engine\pyengine.cpp
+			start (160):    m_strStartInfo = GLOBALCODEDICT(Cube::ePythonCodeStart).arg(m_strPyModule).arg(m_strFuncName);
+			start (273):    SendLogMsg(Cube::ePythonCodeEnd, GLOBALCODEDICT(Cube::ePythonCodeEnd).arg(m_strPyModule).arg(m_strFuncName));
+			start (293):    m_strErrMsg = GLOBALCODEDICT(Cube::ePythonCodeStartFailed).arg(m_strPyModule).arg(m_strFuncName);
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\expression\antlr4_runtime\BaseErrorListener.cpp
+			syntaxError (10):    EXCEPTION_THROW(Cube::eExpressionParseError, GLOBALCODEDICT(Cube::eExpressionParseError).arg(strErrMsg))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\expression\qtexpression.cpp
+			doAnalysis (88):    EXCEPTION_THROW(Cube::eExpressionParseError, GLOBALCODEDICT(Cube::eExpressionParseError).arg(QString("%1 ---> %2").arg(strCondition).arg(m_sTmpExpr)))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\ai\cubeocrresult.cpp
+			create (57):    EXCEPTION_THROW(Cube::eNoneKey, GLOBALCODEDICT(Cube::eNoneKey).arg(GLOBALSYSDEF(code)))
+			create (61):    EXCEPTION_THROW(Cube::eNoneKey, GLOBALCODEDICT(Cube::eNoneKey).arg(GLOBALSYSDEF(message)))
+			create (65):    EXCEPTION_THROW(Cube::eNoneKey, GLOBALCODEDICT(Cube::eNoneKey).arg(GLOBALSYSDEF(data)))
+			create (69):    EXCEPTION_THROW(Cube::eNoneKey, GLOBALCODEDICT(Cube::eNoneKey).arg(GLOBALSYSDEF(businessCode)))
+			create (73):    EXCEPTION_THROW(Cube::eNoneKey, GLOBALCODEDICT(Cube::eNoneKey).arg(GLOBALSYSDEF(specialType)))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\qcontroller\engineUtil\Guard.cpp
+			CGuardStepAndCard (92):    m_cbfWriteCardLog(Cube::eCardStart, GLOBALCODEDICT(Cube::eCardStart).arg(ptr->getCardName()));
+			~CGuardStepAndCard (129):    m_cbfWriteCardLog(Cube::eCardEnd, GLOBALCODEDICT(Cube::eCardEnd).arg(QString::fromStdString(card.GetName())));
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\system\cubecolor.cpp
+			fromHex (51):    EXCEPTION_THROW(Cube::eRGBAHexError, GLOBALCODEDICT(Cube::eRGBAHexError).arg(_rgba))
+			fromHex (73):    EXCEPTION_THROW(Cube::eRGBAHexError, GLOBALCODEDICT(Cube::eRGBAHexError).arg(_rgba))
+			setHex (192):    EXCEPTION_THROW(Cube::eRGBAHexError, GLOBALCODEDICT(Cube::eRGBAHexError).arg(_rgba))
+			setHex (214):    EXCEPTION_THROW(Cube::eRGBAHexError, GLOBALCODEDICT(Cube::eRGBAHexError).arg(_rgba))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\system\cubecoreapp.cpp
+			shutdown (208):    EXCEPTION_THROW(Cube::eShutdownCountDownOutOfRange, GLOBALCODEDICT(Cube::eShutdownCountDownOutOfRange).arg(_iCountDown))
+			restart (230):    EXCEPTION_THROW(Cube::eShutdownCountDownOutOfRange, GLOBALCODEDICT(Cube::eShutdownCountDownOutOfRange).arg(_iCountDown))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\cube\cubevariable.cpp
+			callFunc (362):    EXCEPTION_THROW(Cube::eNoneFunctionError, GLOBALCODEDICT(Cube::eNoneFunctionError).arg(m_className).arg(funcName));
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\cubedefine.h
+			(12):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eParamtersError).arg(STR).arg(__func__));      \
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\qcontroller\parseresult\projectres.cpp
+			CalcProjectInput (311):    QString errMsg = GLOBALCODEDICT(Cube::ErrorCode::eTypeMisMatch).arg(itVar->getName()).arg(_tmpVar.getClassName());
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\system\cubeprocess.cpp
+			startProcessByCmd (167):    EXCEPTION_THROW(Cube::eCreateProcessFailed, GLOBALCODEDICT(Cube::eCreateProcessFailed).arg(_cmd))
+			startProcessByProgram (208):    EXCEPTION_THROW(Cube::eCreateProcessFailed, GLOBALCODEDICT(Cube::eCreateProcessFailed).arg(strCmd))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\expression\antlr4_runtime\ExpressionBaseVisitor.cpp
+			visitExprMulDivMod (30):    EXCEPTION_THROW(Cube::eNoneNumberError, GLOBALCODEDICT(Cube::eNoneNumberError).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprMulDivMod (35):    EXCEPTION_THROW(Cube::eNoneNumberError, GLOBALCODEDICT(Cube::eNoneNumberError).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprMulDivMod (48):    EXCEPTION_THROW(Cube::eInvalidDivisor, GLOBALCODEDICT(Cube::eInvalidDivisor).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprMulDivMod (60):    EXCEPTION_THROW(Cube::eInvalidDivisor, GLOBALCODEDICT(Cube::eInvalidDivisor).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprFunWithNamespace (124):    EXCEPTION_THROW(Cube::eExpressionParseError, GLOBALCODEDICT(Cube::eExpressionParseError).arg(QString::fromStdString(ctx->getText())))
+			visitExprFunWithNamespace (150):    EXCEPTION_THROW(Cube::eNonClassNameError, GLOBALCODEDICT(Cube::eNonClassNameError).arg(fullPath))
+			visitExprString (182):    EXCEPTION_THROW(Cube::eStringParseError, GLOBALCODEDICT(Cube::eStringParseError))
+			visitExprJson (250):    EXCEPTION_THROW(Cube::eJsonParseError, GLOBALCODEDICT(Cube::eJsonParseError))
+			visitExprJson (258):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(i * 2)->getText())))
+			visitExprAddSub (312):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprAddSub (316):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprAddSub (344):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(Cube::eTypeMisMatch).arg(_sl.getClassName()).arg(_sr.getClassName()))
+			visitExprAddSub (372):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(Cube::eTypeMisMatch).arg(_sl.getClassName()).arg(_sr.getClassName()))
+			visitExprGtGeLeLt (392):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprGtGeLeLt (396):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprGtGeLeLt (413):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(Cube::eTypeMisMatch).arg(_sl.getClassName()).arg(_sr.getClassName()))
+			visitExprAnd (457):    EXCEPTION_THROW(Cube::eNoneBooleanError, GLOBALCODEDICT(Cube::eNoneBooleanError).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprAnd (461):    EXCEPTION_THROW(Cube::eNoneBooleanError, GLOBALCODEDICT(Cube::eNoneBooleanError).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprOr (482):    EXCEPTION_THROW(Cube::eNoneBooleanError, GLOBALCODEDICT(Cube::eNoneBooleanError).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprOr (486):    EXCEPTION_THROW(Cube::eNoneBooleanError, GLOBALCODEDICT(Cube::eNoneBooleanError).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprRange (547):    EXCEPTION_THROW(Cube::eNoneNumberError, GLOBALCODEDICT(Cube::eNoneNumberError).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprRange (551):    EXCEPTION_THROW(Cube::eNoneNumberError, GLOBALCODEDICT(Cube::eNoneNumberError).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprStringFun (587):    EXCEPTION_THROW(Cube::eStringParseError, GLOBALCODEDICT(Cube::eStringParseError))
+			visitExprEqNe (640):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprEqNe (644):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprEqNe (682):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(Cube::eTypeMisMatch).arg(_sl.getClassName()).arg(_sr.getClassName()))
+			visitExprEqNe (721):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(Cube::eTypeMisMatch).arg(_sl.getClassName()).arg(_sr.getClassName()))
+			visitExprAbsEqNe (739):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprAbsEqNe (743):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(1)->getText())))
+			visitExprAbsEqNe (774):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(Cube::eTypeMisMatch).arg(_sl.getClassName()).arg(_sr.getClassName()))
+			visitExprAbsEqNe (806):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(Cube::eTypeMisMatch).arg(_sl.getClassName()).arg(_sr.getClassName()))
+			visitExprPM (829):    EXCEPTION_THROW(Cube::eNoneNumberError, GLOBALCODEDICT(Cube::eNoneNumberError).arg(QString::fromStdString(ctx->expr()->getText())))
+			visitExprPM (842):    EXCEPTION_THROW(Cube::eNoneNumberError, GLOBALCODEDICT(Cube::eNoneNumberError).arg(QString::fromStdString(ctx->expr()->getText())))
+			visitExprPM (855):    EXCEPTION_THROW(Cube::eNoneBooleanError, GLOBALCODEDICT(Cube::eNoneBooleanError).arg(QString::fromStdString(ctx->expr()->getText())))
+			visitExprStringAppend (877):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(0)->getText())))
+			visitExprStringAppend (881):    EXCEPTION_THROW(Cube::eInvalidType, GLOBALCODEDICT(Cube::eInvalidType).arg(QString::fromStdString(ctx->expr(1)->getText())))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\lang\cubedatetime.cpp
+			setYear (251):    EXCEPTION_THROW(Cube::eYearOver, GLOBALCODEDICT(Cube::eYearOver))
+			setMonth (274):    EXCEPTION_THROW(Cube::eMonthOver, GLOBALCODEDICT(Cube::eMonthOver))
+			setDay (297):    EXCEPTION_THROW(Cube::eDayOver, GLOBALCODEDICT(Cube::eDayOver))
+			setHour (321):    EXCEPTION_THROW(Cube::eHourOver, GLOBALCODEDICT(Cube::eHourOver))
+			setMinute (345):    EXCEPTION_THROW(Cube::eMinuteOver, GLOBALCODEDICT(Cube::eMinuteOver))
+			setSecond (369):    EXCEPTION_THROW(Cube::eSecondOver, GLOBALCODEDICT(Cube::eSecondOver))
+			setMSecsSinceEpoch (393):    EXCEPTION_THROW(Cube::eMillisecondOver, GLOBALCODEDICT(Cube::eMillisecondOver))
+			daysTo (534):    EXCEPTION_THROW(Cube::eInvalidDateTime, GLOBALCODEDICT(Cube::eInvalidDateTime))
+			hoursTo (557):    EXCEPTION_THROW(Cube::eInvalidDateTime, GLOBALCODEDICT(Cube::eInvalidDateTime))
+			minutesTo (580):    EXCEPTION_THROW(Cube::eInvalidDateTime, GLOBALCODEDICT(Cube::eInvalidDateTime))
+			secsTo (603):    EXCEPTION_THROW(Cube::eInvalidDateTime, GLOBALCODEDICT(Cube::eInvalidDateTime))
+			msecsTo (626):    EXCEPTION_THROW(Cube::eInvalidDateTime, GLOBALCODEDICT(Cube::eInvalidDateTime))
+			fromString (653):    EXCEPTION_THROW(Cube::eStringChangeToDateTimeError, GLOBALCODEDICT(Cube::eStringChangeToDateTimeError))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\lang\cubekeyvalue.cpp
+			getValueByKey (224):    EXCEPTION_THROW(Cube::eNoneKey, GLOBALCODEDICT(Cube::eNoneKey).arg(keyVal.value()))
+			toJsonText (317):    EXCEPTION_THROW(Cube::eChangeToOriginJsonError, GLOBALCODEDICT(Cube::eChangeToOriginJsonError))
+			toJsonText (328):    EXCEPTION_THROW(Cube::eChangeToOriginJsonError, GLOBALCODEDICT(Cube::eChangeToOriginJsonError))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\lang\cubeliststep.cpp
+			buildList (79):    EXCEPTION_THROW(Cube::ePStepLeftBiggerError, GLOBALCODEDICT(Cube::ePStepLeftBiggerError).arg(_step.toString()).arg(_begin.toString()).arg(_end.toString()))
+			buildList (83):    EXCEPTION_THROW(Cube::eNStepLeftBiggerError, GLOBALCODEDICT(Cube::eNStepLeftBiggerError).arg(_step.toString()).arg(_begin.toString()).arg(_end.toString()))
+			buildList (87):    EXCEPTION_THROW(Cube::eZeroStepError, GLOBALCODEDICT(Cube::eZeroStepError).arg(_step.toString()))
+			size (107):    EXCEPTION_THROW(Cube::eZeroStepError, GLOBALCODEDICT(Cube::eZeroStepError).arg(m_step.toString()))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\lang\cubedatatable.cpp
+			getColByIndex (250):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			getColByIndex (264):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			getRowByIndex (285):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			getRowByIndex (297):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			delRow (323):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			delRow (339):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			delCol (355):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			delCol (380):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			insertRow (540):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			insertRow (553):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			insertRow (564):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			insertCol (591):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			insertCol (611):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			insertCol (624):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			sortByCol (687):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			sortByCol (732):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			sortByCol (775):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(eTypeMisMatch).arg(colTypes[iCol]).arg(_realVar[iRow][iCol].getClassName()))
+			sortByCol (781):    EXCEPTION_THROW(Cube::eNoneNumberDateTimeStringError, GLOBALCODEDICT(Cube::eNoneNumberDateTimeStringError).arg(_realVar[iRow][iCol].getClassName()))
+			sortByRow (926):    EXCEPTION_THROW(Cube::eTransposeError, GLOBALCODEDICT(Cube::eTransposeError))
+			sortByRow (931):    EXCEPTION_THROW(Cube::eSortByColumnError, GLOBALCODEDICT(Cube::eSortByColumnError))
+			sortByRow (936):    EXCEPTION_THROW(Cube::eTransposeError, GLOBALCODEDICT(Cube::eTransposeError))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\lang\cubenumber.cpp
+			getSafeDecimal (247):    EXCEPTION_THROW(Cube::eInvalidDecimal, GLOBALCODEDICT(Cube::eInvalidDecimal).arg(cString))
+			mod (318):    EXCEPTION_THROW(Cube::eInvalidDivisor, GLOBALCODEDICT(Cube::eInvalidDivisor).arg(QObject::tr("second parameter")))
+			round (354):    EXCEPTION_THROW(Cube::eNonNegativeInteger, GLOBALCODEDICT(Cube::eNonNegativeInteger))
+			roundd (378):    EXCEPTION_THROW(Cube::eNonNegativeInteger, GLOBALCODEDICT(Cube::eNonNegativeInteger))
+			thousandsSeparator (401):    EXCEPTION_THROW(Cube::eNoneNumberError, GLOBALCODEDICT(Cube::eNoneNumberError).arg(str.value()))
+			fromString (423):    EXCEPTION_THROW(Cube::eStringChangeToNumberError, GLOBALCODEDICT(Cube::eStringChangeToNumberError))
+			random (445):    EXCEPTION_THROW(Cube::eLeftBoderGreaterThanRightBoder, GLOBALCODEDICT(Cube::eLeftBoderGreaterThanRightBoder).arg(minNum.toString()).arg(maxNum.toString()))
+			randomList (478):    EXCEPTION_THROW(Cube::eNonNegativeInteger, GLOBALCODEDICT(Cube::eNonNegativeInteger))
+			randomList (490):    EXCEPTION_THROW(Cube::eLeftBoderGreaterThanRightBoder, GLOBALCODEDICT(Cube::eLeftBoderGreaterThanRightBoder).arg(minNum.toString()).arg(maxNum.toString()))
+			randomList (496):    EXCEPTION_THROW(Cube::eShortIntegersError, GLOBALCODEDICT(Cube::eShortIntegersError).arg(minNum.toString()).arg(maxNum.toString()).arg(iCount))
+			randomInteger (543):    EXCEPTION_THROW(Cube::eNoneIntegersError, GLOBALCODEDICT(Cube::eNoneIntegersError).arg(DataClean::getCeil64(minNum.value())).arg(DataClean::getFloor64(maxNum.value())))
+			randomIntegerList (566):    EXCEPTION_THROW(Cube::eNoneIntegersError, GLOBALCODEDICT(Cube::eNoneIntegersError).arg(DataClean::getCeil64(minNum.value())).arg(DataClean::getFloor64(maxNum.value())))
+			randomIntegerList (572):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger));
+			randomIntegerList (578):    EXCEPTION_THROW(Cube::eNonNegativeInteger, GLOBALCODEDICT(Cube::eNonNegativeInteger))
+			randomIntegerList (592):    EXCEPTION_THROW(Cube::eNoneIntegersError, GLOBALCODEDICT(Cube::eNoneIntegersError).arg(DataClean::getCeil64(minNum.value())).arg(DataClean::getFloor64(maxNum.value())))
+			randomIntegerList (599):    EXCEPTION_THROW(Cube::eShortIntegersError, GLOBALCODEDICT(Cube::eShortIntegersError).arg(DataClean::getCeil64(minNum.value())).arg(DataClean::getFloor64(maxNum.value())).arg(iCount))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\lang\cubestring.cpp
+			indexOf (355):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			indexOfByRegExp (388):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			lastIndexOf (422):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			lastIndexOfByRegExp (456):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			insert (801):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			charAt (928):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			charAt (941):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			toJsonValue (1028):    EXCEPTION_THROW(Cube::eJsonParseError, GLOBALCODEDICT(Cube::eJsonParseError))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\qcontroller\engine\qtengine.cpp
+			(90):    sendLog(Cube::eUnDefineAction, GLOBALCODEDICT(Cube::eUnDefineAction).arg(pStep->getType()));\
+			doStop (245):    sendLog(Cube::eUserStop, GLOBALCODEDICT(Cube::eUserStop));
+			doInitInputVar (452):    QString err = GLOBALCODEDICT(eTypeMisMatch).arg(_iterInput->getName()).arg(_tmpVar.getClassName());
+			doInitOutputVar (499):    QString err = GLOBALCODEDICT(eTypeMisMatch).arg(_iterOutput->getName()).arg(_tmpVar.getClassName());
+			doInitConstantVar (552):    QString err = GLOBALCODEDICT(eTypeMisMatch).arg(itRes->second.getName()).arg(var.getClassName());
+			doRun (581):    sendLog(Cube::eProjectStart, GLOBALCODEDICT(Cube::eProjectStart).arg(getTaskName()));
+			doRun (645):    _pException->setOriginMsg(GLOBALCODEDICT(Cube::eNoneBeginRunIDError).arg(strBeginCardID));
+			doRun (668):    sendLog(Cube::eProjectEnd, GLOBALCODEDICT(Cube::eProjectEnd).arg(getTaskName()));
+			doRun (696):    _pException->setOriginMsg(GLOBALCODEDICT(Cube::eNoneTaskError));
+			updateVars (735):    QString err = GLOBALCODEDICT(eTypeMisMatch).arg(className).arg(tmpVar.getClassName());
+			updateVars (745):    QString err = GLOBALCODEDICT(Cube::eNotNormalError).arg(itorVar->getName());
+			updateVar (775):    QString err = GLOBALCODEDICT(eTypeMisMatch).arg(varIn.getName()).arg(var.getClassName());
+			appendVars (888):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eIllegalVariableError).arg(itorVar->getName()));
+			appendVars (894):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eVariableRepeate).arg(itorVar->getName()));
+			doIFjudge (1107):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eEmptyExpression).arg(getCurRunid()));
+			doIFjudge (1121):    QString strErr = GLOBALCODEDICT(Cube::eNoneBooleanError).arg(resp.toString());
+			doRun_Switch (1158):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eEmptyExpression).arg(getCurRunid()));
+			doSwitchJudge (1225):    QString strErr = GLOBALCODEDICT(Cube::eNoneNormalError).arg(var.getClassName());
+			doDoWhileJudge (1303):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eEmptyExpression).arg(getCurRunid()));
+			doDoWhileJudge (1317):    QString strErr = GLOBALCODEDICT(Cube::eNoneBooleanError).arg(resp.toString());
+			doWhileJudge (1397):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eEmptyExpression).arg(getCurRunid()));
+			doWhileJudge (1411):    QString strErr = GLOBALCODEDICT(Cube::eNoneBooleanError).arg(resp.toString());
+			doRun_Foreach (1455):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eNoLoopBodyError).arg(getCurRunid()));
+			doRun_Foreach (1629):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eStepZeroError));
+			doRun_Foreach (1637):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvalidType).arg(resp.getName()));
+			doRun_TryCatch (1726):    QString strErr = GLOBALCODEDICT(Cube::eIllegalVariableError).arg(pTryCatch->getExceptionVarName());
+			doRun_Action_InvokeSubflow_step (1865):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeEmptySubflowError).arg(getCurRunid()));
+			doRun_Action_Assign_step (1892):    QString strErr = GLOBALCODEDICT(Cube::eIllegalVariableError).arg(lvar);
+			doRun_Action_Assign_step (1900):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eEmptyVariableError).arg(getCurRunid()));
+			doRun_Action_AssignLocal_step (1950):    QString strErr = GLOBALCODEDICT(Cube::eIllegalVariableError).arg(lvar);
+			doRun_Action_AssignLocal_step (1958):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eEmptyVariableError).arg(getCurRunid()));
+			doRun_Throw_step (2094):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eNonVariableError).arg(tr("eCode or eMsg")));
+			doRun_Action_InvokeProject_step (2169):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeEmptyProjectError).arg(getCurRunid()));
+			doRun_Action_InvokeProject_step (2182):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeProjectPathNoneExist).arg(getCurRunid()));
+			doRun_Action_InvokeProject_step (2234):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeProjectPathNoneExist).arg(getCurRunid()));
+			doRun_Action_InvokeRobot_step (2258):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeRobotNotSupportDebug).arg(getCurRunid()));
+			doRun_Action_InvokeRobot_step (2269):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeEmptyProjectError).arg(getCurRunid()));
+			doRun_Action_InvokeRobot_step (2284):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeRobotDownloadFailed).arg(strTmp).arg(strMsg));
+			doRun_Action_InvokeRobot_step (2297):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeNetProjectDownloadFailed).arg(strTmp).arg(tr("net error project run failed")));
+			doRun_Action_InvokeNetProject_step (2414):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeEmptyProjectError).arg(getCurRunid()));
+			doRun_Action_InvokeNetProject_step (2434):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeNetProjectDownloadFailed).arg(strName).arg(strError));
+			doRun_Action_InvokeNetProject_step (2477):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeNetProjectDownloadFailed).arg(strName).arg(tr("net error project run failed")));
+			doRun_Action_InvokWorkFlow_step (2600):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eWorkFlowNoneExist).arg(getCurRunid()));
+			doRun_Action_InvokWorkFlow_step (2674):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eWorkFlowNoneExist).arg(pWorkFlow->getWorkFlowID()));
+			doRun_Action_AssignInput_step (2725):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInputParamNoneExist).arg(lvar));
+			doRun_Action_AssignOutput_step (2767):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eOutputParamNoneExist).arg(lvar));
+			doRun_Action_InvokWorkFlowLib_step (2788):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eWorkFlowNoneExist).arg(pWorkFlow->getWorkFlowID()));
+			doRun_Action_InvokWorkFlowLib_step (2846):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eWorkFlowNoneExist).arg(pWorkFlow->getWorkFlowID()));
+			callbackObjFunc (2997):    QString strErr = GLOBALCODEDICT(Cube::eNonStaticFunctionError).arg(objName).arg(funcName);
+			callbackObjFunc (3082):    QString strErr = GLOBALCODEDICT(Cube::eNonVariableError).arg(objName);
+			callbackObjFunc (3119):    QString strErr = GLOBALCODEDICT(Cube::eParamtersCountsError).arg(funcName).arg(params.size()).arg(paraIndex);
+			callbackVarFunc (3170):    QString strErr = GLOBALCODEDICT(Cube::eParamtersCountsError).arg(funcName).arg(paraIndex).arg(params.size());
+			callClassObj (3233):    QString strErr = GLOBALCODEDICT(Cube::eNonClassNameError).arg(objVar.getClassName());
+			callClassObj (3257):    QString strErr = GLOBALCODEDICT(Cube::eRunActionNoneConnectError).arg(getCurRunid());
+			calcExpression (3293):    pExcpt->setOriginMsg(GLOBALCODEDICT(Cube::eExpressionParseError).arg(QString::fromStdString(err)));
+			calcExpression (3299):    pExcpt->setOriginMsg(GLOBALCODEDICT(Cube::eExpressionParseError).arg(tr("Unknow Error")));
+			calcExpressionForConstant (3330):    pExcpt->setOriginMsg(GLOBALCODEDICT(Cube::eExpressionParseError).arg(QString::fromStdString(err)));
+			calcExpressionForConstant (3336):    pExcpt->setOriginMsg(GLOBALCODEDICT(Cube::eExpressionParseError).arg(tr("Unknow Error")));
+			buildBinMsg (4458):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(eTypeMisMatch).arg(_srcType).arg(_dstType))
+			msgToPlugin (4541):    QString strErr = GLOBALCODEDICT(Cube::eRunActionNoneConnectError).arg(getCurRunid());
+			RunProject (4619):    pException->setOriginMsg(GLOBALCODEDICT(Cube::eInvokeProjectPackageError).arg(getCurRunid()));
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\qcontroller\analysis\ParseRPKGFile.cpp
+			ParseRPKGFile (28):    strErrMsg = GLOBALCODEDICT(nErrCode).arg(strFile);
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\include\cube\variable\lang\cubelist.cpp
+			getAt (212):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger));
+			getAt (217):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			getAt (227):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			setAt (244):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger));
+			setAt (249):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			setAt (255):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			removeAt (290):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger));
+			removeAt (295):    EXCEPTION_THROW(Cube::eNonPositiveInteger, GLOBALCODEDICT(Cube::eNonPositiveInteger))
+			removeAt (305):    EXCEPTION_THROW(Cube::eParamerOutofRangeError, GLOBALCODEDICT(Cube::eParamerOutofRangeError))
+			sort (491):    EXCEPTION_THROW(Cube::eTypeMisMatch, GLOBALCODEDICT(Cube::eTypeMisMatch).arg(eSortTypeName).arg(itor->getClassName()))
+			sort (497):    EXCEPTION_THROW(Cube::eNoneNumberDateTimeStringError, GLOBALCODEDICT(Cube::eNoneNumberDateTimeStringError).arg(itor->getClassName()))
+			toJsonText (601):    EXCEPTION_THROW(Cube::eChangeToOriginJsonError, GLOBALCODEDICT(Cube::eChangeToOriginJsonError))
+			toJsonText (612):    EXCEPTION_THROW(Cube::eChangeToOriginJsonError, GLOBALCODEDICT(Cube::eChangeToOriginJsonError))
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\qcontroller\engine\qtenginemgr.cpp
+			doParseTaskPrj (497):    QString strErr = GLOBALCODEDICT(Cube::eIllegalProjectFile).arg(m_pTask->getRPKGPath());
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\qcontroller\settings\qtrobotsetting.cpp
+			runStrongCheck (113):    errTrace(Cube::eLowProjVersionLimitError, GLOBALCODEDICT(Cube::eLowProjVersionLimitError), eptr);
+			runStrongCheck (118):    errTrace(Cube::eVersionRuleError, GLOBALCODEDICT(Cube::eVersionRuleError).arg(_strVersion), eptr);
+			hasClassObj (677):    QString strErr = GLOBALCODEDICT(Cube::eParamtersCountsError).arg(func).arg(curFunc.getInputsCount()).arg(paras.size());
+			hasClassObj (683):    EXCEPTION_THROW(Cube::eNoneFunctionError, GLOBALCODEDICT(Cube::eNoneFunctionError).arg(className).arg(func))
+			hasClassObj (688):    QString strErr = GLOBALCODEDICT(Cube::eNonClassNameError).arg(className);
+		E:\Code\6.0\CubeBusMeta\CubeAgent_6.3\source\RobotEngine\qcontroller\analysis\qtanalysisworkflow.cpp
+			parseFromFile (39):    EXCEPTION_THROW(Cube::eCannotParseProjectFile, GLOBALCODEDICT(Cube::eCannotParseProjectFile));
+			parseStepFromXML (1203):    QString strErr = GLOBALCODEDICT(Cube::eUndefineFlowStep).arg(eType);
+			parseStepFromXML (1463):    QString strErr = GLOBALCODEDICT(Cube::eUndefineFlowStep).arg(eType);
+			parseStepFromXML (1964):    QString strErr = GLOBALCODEDICT(Cube::eUndefineFlowStep).arg(eType);
