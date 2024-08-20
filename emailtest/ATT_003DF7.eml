@@ -1,0 +1,463 @@
+Received: from PAVPR08MB9234.eurprd08.prod.outlook.com (2603:10a6:102:309::18)
+ by GV1PR08MB10536.eurprd08.prod.outlook.com with HTTPS; Thu, 20 Jun 2024
+ 00:46:41 +0000
+Received: from AM6P194CA0039.EURP194.PROD.OUTLOOK.COM (2603:10a6:209:84::16)
+ by PAVPR08MB9234.eurprd08.prod.outlook.com (2603:10a6:102:309::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7677.31; Thu, 20 Jun
+ 2024 00:46:39 +0000
+Received: from AM1PEPF000252DE.eurprd07.prod.outlook.com
+ (2603:10a6:209:84:cafe::d0) by AM6P194CA0039.outlook.office365.com
+ (2603:10a6:209:84::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7677.34 via Frontend
+ Transport; Thu, 20 Jun 2024 00:46:39 +0000
+Received: from EUR04-HE1-obe.outbound.protection.outlook.com (40.107.7.47) by
+ AM1PEPF000252DE.mail.protection.outlook.com (10.167.16.56) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7677.15 via Frontend Transport; Thu, 20 Jun 2024 00:46:37 +0000
+Received: from PAXPR03MB7665.eurprd03.prod.outlook.com (2603:10a6:102:200::23)
+ by DB9PR03MB7706.eurprd03.prod.outlook.com (2603:10a6:10:2c8::23) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7698.19; Thu, 20 Jun
+ 2024 00:46:36 +0000
+Received: from PAXPR03MB7665.eurprd03.prod.outlook.com
+ ([fe80::173:33ac:cc5f:b035]) by PAXPR03MB7665.eurprd03.prod.outlook.com
+ ([fe80::173:33ac:cc5f:b035%3]) with mapi id 15.20.7698.017; Thu, 20 Jun 2024
+ 00:46:35 +0000
+From: Li Xia AP-HUB <Xia.Li@mt.com>
+To: Lu HuaYun AP-HUB <HuaYun.Lu@mt.com>, "APAC-SH, MT-ServiceDelivery-AP-HUB"
+	<MT-ServiceDelivery-AP-HUB@arvato-scs.com>, APAC-SH-MT-Operations-AP-HUB
+	<MT-Operations-AP-HUB@arvato-scs.com>, Gu Song AP-HUB <Song.Gu@mt.com>, Roy
+ Gu XingFu MTCT <XingFu.Gu@mt.com>, "Wu, Vyuna" <Vyuna.Wu@arvato-scs.com>, Xi
+ XinHua AP-HUB <XinHua.Xi@mt.com>, Yu ChunJing AP-HUB <ChunJing.Yu@mt.com>,
+	Zhang WenXing AP-HUB <WenXing.Zhang@mt.com>, "Zhang, Jerry"
+	<Jerry.Zhang@arvato-scs.com>
+Subject: =?gb2312?B?IE1JTkktRklOSVNIMjAyNDA2MjC12tK7tM6yucHP?=
+Thread-Topic: =?gb2312?B?IE1JTkktRklOSVNIMjAyNDA2MjC12tK7tM6yucHP?=
+Thread-Index: AQHawqtRHsGJrdvlOEmW+xlkCceQcg==
+Date: Thu, 20 Jun 2024 00:46:35 +0000
+Message-ID:
+ <PAXPR03MB76651C250641B374F74FFF03F7C82@PAXPR03MB7665.eurprd03.prod.outlook.com>
+References:
+ <GV1PR03MB8815D26B504D60A4243C735885CF2@GV1PR03MB8815.eurprd03.prod.outlook.com>
+In-Reply-To:
+ <GV1PR03MB8815D26B504D60A4243C735885CF2@GV1PR03MB8815.eurprd03.prod.outlook.com>
+Accept-Language: zh-CN, en-US
+Content-Language: zh-CN
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Organization-AuthSource:
+ AM1PEPF000252DE.eurprd07.prod.outlook.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+ 81838dc3-e82b-4e7c-52d4-08dc90c2716a
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+ MSIP_Label_af615ef3-aa90-4fa2-9d66-c4f70f9fc413_ActionId=0a6b3269-7214-49fc-96b4-daae739b3aab;MSIP_Label_af615ef3-aa90-4fa2-9d66-c4f70f9fc413_ContentBits=0;MSIP_Label_af615ef3-aa90-4fa2-9d66-c4f70f9fc413_Enabled=true;MSIP_Label_af615ef3-aa90-4fa2-9d66-c4f70f9fc413_Method=Standard;MSIP_Label_af615ef3-aa90-4fa2-9d66-c4f70f9fc413_Name=Confidential;MSIP_Label_af615ef3-aa90-4fa2-9d66-c4f70f9fc413_SetDate=2024-06-19T00:46:02Z;MSIP_Label_af615ef3-aa90-4fa2-9d66-c4f70f9fc413_SiteId=fb4c0aee-6cd2-482f-a1a5-717e7c02496b;
+x-ms-publictraffictype: Email
+x-ms-exchange-organization-originalclientipaddress: 40.107.7.47
+x-ms-exchange-organization-originalserveripaddress: 10.167.16.56
+received-spf: Pass (protection.outlook.com: domain of mt.com designates
+ 40.107.7.47 as permitted sender) receiver=protection.outlook.com;
+ client-ip=40.107.7.47; helo=EUR04-HE1-obe.outbound.protection.outlook.com;
+ pr=C
+x-ms-office365-filtering-correlation-id: 81838dc3-e82b-4e7c-52d4-08dc90c2716a
+x-ms-traffictypediagnostic:
+ PAXPR03MB7665:EE_|DB9PR03MB7706:EE_|AM1PEPF000252DE:EE_|PAVPR08MB9234:EE_|GV1PR08MB10536:EE_
+x-forefront-antispam-report:
+ CIP:40.107.7.47;CTRY:FI;LANG:zh-cn;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:EUR04-HE1-obe.outbound.protection.outlook.com;PTR:mail-he1eur04on2047.outbound.protection.outlook.com;CAT:NONE;SFS:(13230037)(35042699019)(921017);DIR:INB;
+x-microsoft-antispam: BCL:0;ARA:13230037|35042699019|921017;
+x-ms-exchange-crosstenant-network-message-id:
+ 81838dc3-e82b-4e7c-52d4-08dc90c2716a
+x-ms-exchange-crosstenant-originalarrivaltime: 20 Jun 2024 00:46:37.9210 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Internet
+x-ms-exchange-crosstenant-id: 659c3a90-ec90-4772-b772-cebe2050a82e
+x-ms-exchange-transport-crosstenantheadersstamped: PAVPR08MB9234
+authentication-results: spf=pass (sender IP is 40.107.7.47)
+ smtp.mailfrom=mt.com; dkim=pass (signature was verified)
+ header.d=mt.com;dmarc=pass action=none header.from=mt.com;compauth=pass
+ reason=100
+x-ms-exchange-transport-endtoendlatency: 00:00:03.8153108
+x-ms-exchange-processed-by-bccfoldering: 15.20.7698.013
+x-ms-exchange-atpmessageproperties: SA|SL
+x-eopattributedmessage: 0
+x-eoptenantattributedmessage: 659c3a90-ec90-4772-b772-cebe2050a82e:0
+x-ms-exchange-crosstenant-authas: Anonymous
+x-ms-exchange-crosstenant-authsource:
+ AM1PEPF000252DE.eurprd07.prod.outlook.com
+dkim-signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mt.com; s=selector2;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=3e6lKBpEba6VoIU1l6MD8QkaVtkSv9DHZzAEstje1Sc=;
+ b=SEuKR7fNTn/oViUlmMspg24fzfnmrflcJAQWgoQY0VyU0ON7GVFAm3z+iNW2STPIibDbyVC19GT4rtWO5OBLu9hVuNMR86YciMWpRL7vn2mIVqvqh8YcfyvYIM22LvTdpsfCLlZD23QGljFGlhgLV9d90OnSXIwES7P3xHyq4b4km67qk86sjyEN4PJK58Rlcl+6cVBG/aap5Bjews4IBV2oyGgHVf4vo4BQBltQxi/kSFq3H7sE92w1smCDptIDriLzkqflubb66uzL+Rjt6l16L8QT7zwkDKpRs4D7R4ZTBJCygBLy4trrQOoguGNLQR+jR5T0P+E50RJNgNar8A==
+authentication-results-original: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=mt.com;
+X-Microsoft-Antispam-Mailbox-Delivery:
+ ucf:1;jmr:0;auth:0;dest:C;OFR:CustomRules;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+ =?gb2312?B?QklqcEZHMlJvWjlpLzhLL1czaXJ4VHBYa3ZCTEQ1dXoxN3VIaHUvWlZocGhv?=
+ =?gb2312?B?b3h1aGRzak56SWlQdDZmeEFKQjZDSG9EMlgyRlZSSlBvUktDTk1OUDVRRmZC?=
+ =?gb2312?B?cVRIakc4eDFieGV2NTBNTWFEQkJKMDJkSWQvZCtvOWtTbStWNDdkRTJVMjE5?=
+ =?gb2312?B?NFFrSVJPT0QrZnlIaFZpTHp0VnJLc2ZIVnJ4aFJHb0tFM1g0ZmdTd3VkaE9k?=
+ =?gb2312?B?UTRiT1Y2ZktzR0IzUnVNYlZFd0dJYVdGd2ZZdjZBT2U5Q2orSDVySHMyeDho?=
+ =?gb2312?B?bHJBVXRSMDN0d3lLeUF3bDdoc1ZMdWxtWmI3cWdrd2tQSURGUHB5cHRKQ05X?=
+ =?gb2312?B?bWhRd1dVQnZxNkFnYVhwTUJrbnhVNUU3cTZsOU94THNNYUI0YlltcGI3Z3J4?=
+ =?gb2312?B?ckpzWDlsWEtlb0VkSE9FSklSSVh2UVpzUFJleVpGS21sclZZUWFwUVQxZFBY?=
+ =?gb2312?B?OFM2VklIT3h6cFJ1aUdVZ3lFaEl2MGZ5d3BDenU4eFFHbzhzV3ptdm01czQ5?=
+ =?gb2312?B?WVV6dUVJMXVnYWs1Vm9ZTCt0cDBJQ3kwU2VycnpZTHhvZGlkQTI3Y3FIVWxy?=
+ =?gb2312?B?OFBkdUVXY2xXVDlLSWRUWmhBWFhFZjRXb0xWRENNM000UmJpbW83bWZwdDZG?=
+ =?gb2312?B?amNuODY0MGpLTHF3NVRJLy9iUFJlQXJiTEVGVThIRkFBV3M0ZlFWRjhBZGpi?=
+ =?gb2312?B?UUcwZ1ZhQkNUOWx4OUdKaUVxNVZ3RmhXRmUyMktkaXFqT1U1cURpeUc5cmd5?=
+ =?gb2312?B?YjYvNGd4Qmd6LzNhR21STWRZWW9kN2ovZllEVGpNM1dLK2U1REdtMnFQSlhI?=
+ =?gb2312?B?UXVVWm5PN09LQTJsYmYrZFJOMXNZeXZ6OGhZSVhpcDF6UUt4WGl0N1Y4dU1o?=
+ =?gb2312?B?Z0pyM1BNQXl2RWZpejAwdnVNRWpVbWpjblh4RHNMMkpyQnlUbFR6NlJKWjRH?=
+ =?gb2312?B?Yk5MN3NORC94YXhONmhlYUJST2pLWG9ra045TDBpN2JLdnpFalVsa2hYVzFQ?=
+ =?gb2312?B?cWppK2dHMFlEQkJjTDNRMm5TbzViWktzeG5aTHlqNFcwdnYzRjhzdmZ6MHhS?=
+ =?gb2312?B?c3ZGNWYxTjNlRDBnVVZMdG1IUjVQRlhQVVE3dTBzMHpjNEEzd3pWL1I3OWRF?=
+ =?gb2312?B?bENJSEpsYkxHaytJbEs1K3pBb2paQlVCd1RaSzc1Z0xuaTJRQ0x1RExsRXhG?=
+ =?gb2312?B?cm1IYjBqNytUTjM4azdraGJ4eXN3QitnTEQzbytOOUVpcXBiNUFzUlJVZnc4?=
+ =?gb2312?B?bmdhajI0VzRqUXNEck9TMktRVEpoVHd6dUhPMkxoU3pWZW8vV0hYQW5mdHRw?=
+ =?gb2312?B?SjJuUnVMOGpEeFphWHhObUhhN2dHSjk0WjdrVWZCdjZIWk0vVkE1a0trUWJD?=
+ =?gb2312?B?Y1NrcmZCbDlRREFRZnVERUd4YkM4c2xXK3Myd0FFb0twN0o1V2RCSW1OQUhi?=
+ =?gb2312?B?QnRnZVBPWXRjYmxzZjJyOUFjMFl6Rm95cGx0Q1Nac2N3ZkZjekZKL0xxSzZT?=
+ =?gb2312?B?Z3JLUUgraERRYWJSTUxtZ1NoNEpjMnNueVdHeFlDMFBVTkc4YUx5b1JDOGl2?=
+ =?gb2312?B?QjhIR3pBd3NyQkw3MUJhNWFldlhtQ1hpT0F6TzR5TElsVmh2VjR4UG9ZTEVp?=
+ =?gb2312?B?aDMrM2VjcWd0ZVEwN3IvVjdqVDdValpJVTIrTmkxUW8zQ2U0d2swbndZZElR?=
+ =?gb2312?B?RGdZYlFJUGFkWnd3K0ZsUEZRdTJkck9ETEsyc2pjMkxQQmxiYnZsRkdNbk0r?=
+ =?gb2312?B?ekllMFZTdWNiUHBLZThxTXd2MVBOZXVSbUN0UXVicHAzWi9BaTA2YmFDU014?=
+ =?gb2312?B?YUU0T0lkMG1nYlBrUnNGVXd1OENHQXJld3hyRTNnc3dSbUdjcHFQbkc1dzNk?=
+ =?gb2312?B?UlB6QVhvdXJtUG9FbEdKN1dxYXgwVDhSQU9EVnRSTmtYdkhneVZvY09zdEZm?=
+ =?gb2312?B?MW9weGNtZEI1K0tWWGJBM0tCbVFUd2RXOWRDM2tjTDFQbVRXbU5NYXRTdm5s?=
+ =?gb2312?B?Nk9nN0NsV2xIL2h6Y0JWNWtYcXBabWRMQzE2YTdQQ0FiTCtxTkVraUluK1cz?=
+ =?gb2312?B?L2JLbHIxL2Q4RTJxOExJeUk1TysxWStnSFN6WnRXZmRTN2s3QVJRR05UOXht?=
+ =?gb2312?B?T1N6aW9EUkw1NGIxTTduTVArRmxXWncvSUhQd0MzWTVWb2YyTnQ0ZkQ4UWVx?=
+ =?gb2312?B?a0gwMHJEd2U0aTlQUS9RRk5zdWtVV1hVSmNvYUVRbm5xR2ZrS0IxdU1pT0dI?=
+ =?gb2312?B?bzJYY1V0bUVOQXZsQ3VMMEtaT0g2T3RhRGd5c2N0WjlLVTYzL2hrN1p0dDJG?=
+ =?gb2312?B?VC9ISUVDYmtYOW9SNVQ4MWZFZ3V1VHBiT1hZZk5yNzlMWWxZbUl2QXVNaUJZ?=
+ =?gb2312?B?eHRsdllPeHNacE1VS3VEL0liRHFRQVYyOGE3aGdjQUtjVmlIMFM3WElXL0x1?=
+ =?gb2312?B?TXhGaVZSWXY5OWpjRkxsQnNTUjRpZ1J4MlFnWDdVaklUWDhJdDlGZ1RtRXE5?=
+ =?gb2312?B?UmllZDRvcmNKTmFvVXdnTHpDSU9PNDhyQ251OUR0aDV0cWNEc0FybStKNnlt?=
+ =?gb2312?B?Z1NzT1B2aTAvYU5ieDM0QXR4N2Jkcnp2RTBSR1pOQXE0dmlyZEQ1MWNobUNE?=
+ =?gb2312?B?MlNrR3JzRjRhMDl0TEpsUnVjUHZlVnJteFR1UWtPNWtGWlFrWC9KUjVOSGRV?=
+ =?gb2312?B?REZEUmJmdXFWQ0FxUExZaXd0M2twc2dUMkpiV3lrRHRTRzkrR1JXbHVHSEh2?=
+ =?gb2312?B?ZEtsRG1hY0ZJbUlwaWl3bnhxeEFCakRRNFh2WlZIUnFheHd5M0ZrdTZCTzd3?=
+ =?gb2312?B?PT0=?=
+Content-Type: multipart/alternative;
+	boundary="_000_PAXPR03MB76651C250641B374F74FFF03F7C82PAXPR03MB7665eurp_"
+MIME-Version: 1.0
+
+--_000_PAXPR03MB76651C250641B374F74FFF03F7C82PAXPR03MB7665eurp_
+Content-Type: text/plain; charset="gb2312"
+Content-Transfer-Encoding: base64
+
+zu/Bzw0Kyv3Bvw0Kzu/Bz8PoyvYNCjMwMzAzODgyDQoxDQrM7Ma91tDQ1NfpvP5NUzMyMDAxTC9I
+dWINCjMwNjY2MTkwDQoxDQrM7Ma91+m8/rT4zeK/xyBNWDMyMDAxTC9IVUINCjMwNjY2MzEzDQox
+DQrM7Ma91+m8/rT4zeK/xyBNUjYwMDIvSFVCDQozMDcwNjMxMw0KNA0KzOzGvdfpvP60+M3iv8cg
+TUEyMDQvSFVCDQozMDcwNjMxOA0KMQ0KzOzGvdfpvP60+M3iv8cgTUE2MDAyRS9IVUINCjMwODIz
+NzM2DQoyDQrM7Ma91+m8/rT4zeK/xyBMQTQwMDJFL0hVQg0KMzA2NjY3NzgNCjENCrXn1LQgRVhU
+IEFDIHBsdWcsVUssV0gsTENQLUJTSQ0KMzA2NjY5OTQNCjYNCrXn1LQgRVhUIEFDIHBsdWcsRVUs
+V0gNCg0K
+
+--_000_PAXPR03MB76651C250641B374F74FFF03F7C82PAXPR03MB7665eurp_
+Content-Type: text/html; charset="gb2312"
+Content-ID: <D8FC9D6F9BB64B47AF45572A6B369DA1@eurprd08.prod.outlook.com>
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:m=3D"http://schema=
+s.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/REC-html=
+40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dgb2312">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:=CB=CE=CC=E5;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@=CB=CE=CC=E5";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:=CE=A2=C8=ED=D1=C5=BA=DA;
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@=CE=A2=C8=ED=D1=C5=BA=DA";}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ligatures:standardcontextual;}
+span.EmailStyle20
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;
+	mso-ligatures:none;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"ZH-CN" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word;text-justify-trim:punctuation">
+<div class=3D"WordSection1">
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"357" style=3D"width:268.0pt;border-collapse:collapse">
+<tbody>
+<tr style=3D"height:14.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;background:#DDDDDD;padding:0cm 5.4pt 0cm 5.4pt;heig=
+ht:14.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;color:black;mso-ligatures:none">=CE=EF=C1=CF</span><span lang=3D"EN-=
+US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-=
+ligatures:none"><o:p></o:p></span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-left:none;background:#DDDDDD;padding:0cm 5.4=
+pt 0cm 5.4pt;height:14.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:&quot;=
+=CE=A2=C8=ED=D1=C5=BA=DA&quot;,sans-serif;color:black;mso-ligatures:none">=
+=CA=FD=C1=BF</span><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-fami=
+ly:&quot;=CE=A2=C8=ED=D1=C5=BA=DA&quot;,sans-serif;mso-ligatures:none"><o:p=
+></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er:solid windowtext 1.0pt;border-left:none;background:#DDDDDD;padding:0cm 5=
+.4pt 0cm 5.4pt;height:14.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;color:black;mso-ligatures:none">=CE=EF=C1=CF=C3=E8=CA=F6</span><span=
+ lang=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,san=
+s-serif;mso-ligatures:none"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:=
+12.5pt">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;mso-ligatures:none">30303882<o:p></o:p>=
+</span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span lan=
+g=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;mso-ligatures:none">1<o:p></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;mso-ligatures:none">=CC=EC=C6=BD=D6=D0=D0=D4=D7=E9=BC=FE</span><span=
+ lang=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,san=
+s-serif;mso-ligatures:none">MS32001L/Hub<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:=
+12.5pt">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;mso-ligatures:none">30666190<o:p></o:p>=
+</span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span lan=
+g=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;mso-ligatures:none">1<o:p></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;mso-ligatures:none">=CC=EC=C6=BD=D7=E9=BC=FE=B4=F8=CD=E2=BF=C7</span=
+><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quo=
+t;,sans-serif;mso-ligatures:none"> MX32001L/HUB<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:=
+12.5pt">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;mso-ligatures:none">30666313<o:p></o:p>=
+</span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span lan=
+g=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;mso-ligatures:none">1<o:p></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;mso-ligatures:none">=CC=EC=C6=BD=D7=E9=BC=FE=B4=F8=CD=E2=BF=C7</span=
+><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quo=
+t;,sans-serif;mso-ligatures:none"> MR6002/HUB<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:=
+12.5pt">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;mso-ligatures:none">30706313<o:p></o:p>=
+</span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span lan=
+g=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;mso-ligatures:none">4<o:p></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;mso-ligatures:none">=CC=EC=C6=BD=D7=E9=BC=FE=B4=F8=CD=E2=BF=C7</span=
+><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quo=
+t;,sans-serif;mso-ligatures:none"> MA204/HUB<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:=
+12.5pt">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;mso-ligatures:none">30706318<o:p></o:p>=
+</span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span lan=
+g=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;mso-ligatures:none">1<o:p></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;mso-ligatures:none">=CC=EC=C6=BD=D7=E9=BC=FE=B4=F8=CD=E2=BF=C7</span=
+><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quo=
+t;,sans-serif;mso-ligatures:none"> MA6002E/HUB<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:=
+12.5pt">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;mso-ligatures:none">30823736<o:p></o:p>=
+</span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span lan=
+g=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;mso-ligatures:none">2<o:p></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;mso-ligatures:none">=CC=EC=C6=BD=D7=E9=BC=FE=B4=F8=CD=E2=BF=C7</span=
+><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quo=
+t;,sans-serif;mso-ligatures:none"> LA4002E/HUB<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:=
+12.5pt">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;mso-ligatures:none">30666778<o:p></o:p>=
+</span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span lan=
+g=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;mso-ligatures:none">1<o:p></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;mso-ligatures:none">=B5=E7=D4=B4</span><span lang=3D"EN-US" style=3D=
+"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ligatures:no=
+ne"> EXT AC plug,UK,WH,LCP-BSI<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+:solid windowtext 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:=
+12.5pt">
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.0pt;font-=
+family:&quot;Arial&quot;,sans-serif;mso-ligatures:none">30666994<o:p></o:p>=
+</span></p>
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span lan=
+g=3D"EN-US" style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-se=
+rif;mso-ligatures:none">6<o:p></o:p></span></p>
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+<p class=3D"MsoNormal"><span style=3D"font-size:10.0pt;font-family:=CB=CE=
+=CC=E5;mso-ligatures:none">=B5=E7=D4=B4</span><span lang=3D"EN-US" style=3D=
+"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-ligatures:no=
+ne"> EXT AC plug,EU,WH<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:12.5pt">
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;paddin=
+g:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+</td>
+<td width=3D"64" nowrap=3D"" valign=3D"bottom" style=3D"width:48.0pt;paddin=
+g:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+</td>
+<td width=3D"229" nowrap=3D"" valign=3D"bottom" style=3D"width:172.0pt;padd=
+ing:0cm 5.4pt 0cm 5.4pt;height:12.5pt">
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size:10.5pt"><o:p=
+>&nbsp;</o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_PAXPR03MB76651C250641B374F74FFF03F7C82PAXPR03MB7665eurp_--

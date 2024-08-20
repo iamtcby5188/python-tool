@@ -1,7 +1,8 @@
 import json
 import time
 
-from sqlalchemy import create_engine, Column, Integer, String, and_, or_,inspect
+import requests
+from sqlalchemy import create_engine, Column, Integer, String, and_, or_, inspect, MetaData, Table, text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 
@@ -71,31 +72,43 @@ def searchDB():
         #              TaskLogModel.flowName.like('%qqqq%'), TaskLogModel.notes.like('%qqqq%'),
         #              VariableModel.content.like('%aaaccaaa%'))))
 
-        q = session.query(TaskLogModel, VariableModel).join(VariableModel, TaskLogModel.id == VariableModel.id).filter(
-            and_(TaskLogModel.time >= '2020-02-02 12:03:33', TaskLogModel.time <= '2020-02-02 12:03:33',
-                    or_(TaskLogModel.cardId.like('%aa%'), TaskLogModel.cardName.like('%qqqq%'),
-                     TaskLogModel.flowName.like('%qqqq%'), TaskLogModel.notes.like('%qqqq%'),
-                     VariableModel.content.like('%aaaccaaa%'))))
-        result = q.all()
+        # q = session.query(TaskLogModel, VariableModel).join(VariableModel, TaskLogModel.id == VariableModel.id).filter(
+        #     and_(TaskLogModel.time >= '2020-02-02 12:03:33', TaskLogModel.time <= '2020-02-02 12:03:33',
+        #          or_(TaskLogModel.cardId.like('%aa%'), TaskLogModel.cardName.like('%qqqq%'),
+        #              TaskLogModel.flowName.like('%qqqq%'), TaskLogModel.notes.like('%qqqq%'),
+        #              VariableModel.content.like('%aaaccaaa%'))))
 
-        print(f'-------------------------------- 2  {getCurrentTime() - start}')
-        time.sleep(10)
+        q = session.execute(text("select * from new_table_name where id = '5adcde50-ed6f-11ee-a63c-18c04df9d05b'")).one_or_none()
+        print(q.flow_name, q.id)
+
+
+        # pass
         # print(f'{result=}')
-        for r, v in result:
-            print(f'{r}')
-            print(f'{v}')
-
-
+        # for r in result:
+        #     print(f'{r.flow_name}')
+    print(f'-------------------------------- 2  {getCurrentTime() - start}')
+    url:str = ""
+    headers: dict = {}
+    payload: bytes = b""
+    response = requests.request("GET", url, headers=headers, data=payload, timeout=1)
 
 if __name__ == "__main__":
     # initDB()
-    # searchDB()
+    searchDB()
+    # s = time.time()
     # engine = create_engine(f'sqlite:///{dbFile}', echo=True)
+
+    # with Session(engine) as con:
+    #     con.execute("select * from aa")
+    #     con.commit()
+    #
+    # e = time.time()
+    # print('-------------------')
+    # print(e - s)
     #
     # inspect = inspect(engine)
     # has = inspect.has_table('tb_task_log')
-    # print(has)
-    lst = [[],None,[],None]
-    print(json.dumps(lst))
-    for i in lst:
-        print(i)
+    # # print(has)
+    # a = {}
+    # a['a'] = (1, 2)
+    # print(a['a'][0], a['a'][1])
